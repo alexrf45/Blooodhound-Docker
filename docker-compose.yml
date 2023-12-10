@@ -46,7 +46,7 @@ services:
     ports:
       - ${NEO4J_DB_PORT}:${NEO4J_DB_PORT}
       - ${NEO4J_WEB_PORT}:${NEO4J_WEB_PORT}
-    # volumes:
+    volumes:
       - ${NEO4J_DATA_MOUNT}:/data
     healthcheck:
       test:
