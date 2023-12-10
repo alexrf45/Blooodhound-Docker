@@ -72,7 +72,7 @@ services:
       - ${BLOODHOUND_PORT}:${BLOODHOUND_PORT}
     ### Uncomment to use your own bloodhound.config.json to configure the application
     volumes:
-      - ./bloodhound.config.json:/bloodhound.config.json:ro
+      - $HOME/.local/bloodhound.config.json:/bloodhound.config.json:ro
     depends_on:
       app-db:
         condition: service_healthy
