@@ -69,7 +69,7 @@ services:
       ### The left side is the environment variable you're setting for bloodhound, the variable on the right in `${}`
       ### is the variable available outside of Docker
     ports:
-      - BLOODHOUND_PORT=${BLOODHOUND_PORT}
+      - ${BLOODHOUND_PORT}:${BLOODHOUND_PORT}
     ### Uncomment to use your own bloodhound.config.json to configure the application
     volumes:
       - ./bloodhound.config.json:/bloodhound.config.json:ro
