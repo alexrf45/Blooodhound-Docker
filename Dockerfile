@@ -1,5 +1,5 @@
-FROM neo4j:4.4.9
-LABEL Author="Roland Alexander"
+FROM neo4j:latest
+LABEL Author="f0nzy"
 LABEL Environment='dev'
 
 ENV NEO4J_AUTH=neo4j/roland
